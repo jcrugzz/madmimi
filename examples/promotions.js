@@ -9,6 +9,6 @@ madmimi.get('/promotions')
 .then(function (promotions) {
   console.log(promotions);
 })
-.catch(function (err) {
+.error(function (err) {
   console.error(err);
 });
