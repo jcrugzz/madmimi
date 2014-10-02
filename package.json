@@ -1,0 +1,43 @@
+{
+  "name": "madmimi",
+  "version": "0.0.1",
+  "description": "A simple, feature-complete client for the Mad Mimi REST API.",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nicholaswyoung/madmimi-node.git"
+  },
+  "keywords": [
+    "mad",
+    "mimi",
+    "email",
+    "marketing",
+    "send",
+    "email",
+    "madmimi"
+  ],
+  "author": "Nicholas Young <nicholas@nicholaswyoung.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicholaswyoung/madmimi-node/issues"
+  },
+  "homepage": "https://github.com/nicholaswyoung/madmimi-node",
+  "dependencies": {
+    "bluebird": "^2.3.4",
+    "errbot": "0.0.3",
+    "methods": "^1.1.0",
+    "request": "^2.44.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "gulp": "^3.8.8",
+    "gulp-mocha": "^1.1.0",
+    "nock": "^0.48.0"
+  }
+}
