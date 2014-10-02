@@ -4,6 +4,10 @@ A clean, modern interface for the [Mad Mimi](http://madmimi.com) API. At the mom
 
 Under the hood, it uses [Bluebird](https://github.com/petkaantonov/bluebird) to provide a Promise-based API. Alternatively, you can also use callbacks (in the traditional Node style), if preferred.
 
+## Installation
+
+```npm install madmimi```
+
 ## Usage
 
 ```javascript
@@ -11,6 +15,7 @@ var madmimi = require('madmimi');
 
 // Only call this once, maybe in an initializer.
 madmimi.configure({
+  email: 'nicholas@example.com',
   key: 'xxxxx'
 });
 
