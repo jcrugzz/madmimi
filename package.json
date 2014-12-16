@@ -7,11 +7,11 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm test"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nicholaswyoung/madmimi-node.git"
+    "url": "git://github.com/nicholaswyoung/madmimi.git"
   },
   "keywords": [
     "mad",
@@ -25,9 +25,9 @@
   "author": "Nicholas Young <nicholas@nicholaswyoung.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nicholaswyoung/madmimi-node/issues"
+    "url": "https://github.com/nicholaswyoung/madmimi/issues"
   },
-  "homepage": "https://github.com/nicholaswyoung/madmimi-node",
+  "homepage": "https://github.com/nicholaswyoung/madmimi",
   "dependencies": {
     "bluebird": "^2.3.4",
     "errbot": "0.0.3",
