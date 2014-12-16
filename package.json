@@ -23,7 +23,7 @@
     "madmimi"
   ],
   "author": "Nicholas Young <nicholas@nicholaswyoung.com>",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/nicholaswyoung/madmimi/issues"
   },
