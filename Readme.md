@@ -26,6 +26,14 @@ madmimi.get('/promotions')
 .error(function (err) {
 
 });
+
+madmimi.get('/promotions/:id', {
+  params: {
+    id: '123456'
+  }
+})
+.success(function (response) {})
+.error(function (err) {});
 ```
 
 ## License
