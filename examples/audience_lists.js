@@ -8,7 +8,7 @@ madmimi.configure({
 /**
 * Add a new audience member, and subscribe them to a list.
 */
-madmimi.post('/audience_lists/:list', {
+madmimi.post('/audience_lists/:list/add', {
   email: 'test@example.com'
   params: { list: 'Your List' }
 })
@@ -22,7 +22,7 @@ madmimi.post('/audience_lists/:list', {
 /**
 * If you prefer, there's a callback API as well.
 */
-madmimi.get('/audience_lists/:list', {
+madmimi.get('/audience_lists/:list/add', {
   email: 'test@example.com'
   params: { list: 'Your List' }
 }, function (err, result) {
@@ -33,7 +33,7 @@ madmimi.get('/audience_lists/:list', {
 /**
  * You can also add additional metadata to the user, if you wish.
  */
- madmimi.post('/audience_lists/:list', {
+ madmimi.post('/audience_lists/:list/add', {
    email: 'test@example.com',
    type: 'donor'
    params: { list: 'Your List' }
