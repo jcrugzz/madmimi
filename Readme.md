@@ -1,8 +1,10 @@
 # Mad Mimi
 
-A clean, modern interface for the [Mad Mimi](http://madmimi.com) API. At the moment, this library is little more than an abstracted HTTP Client (with convenience helpers, like one-time setup), but will hopefully become an increasingly powerful set of tools as time goes on.
+A clean, modern interface for the [Mad Mimi](http://madmimi.com) API.
 
 Under the hood, it uses [Bluebird](https://github.com/petkaantonov/bluebird) to provide a Promise-based API. Alternatively, you can also use callbacks (in the traditional Node style), if preferred.
+
+For detailed usage instructions, see the [Examples](https://github.com/nicholaswyoung/madmimi/tree/master/examples).
 
 ## Installation
 
@@ -20,7 +22,7 @@ madmimi.configure({
 });
 
 madmimi.get('/promotions')
-.success(function (response) {
+.then(function (response) {
 
 })
 .error(function (err) {
@@ -32,14 +34,13 @@ madmimi.get('/promotions/:id', {
     id: '123456'
   }
 })
-.success(function (response) {})
+.then(function (response) {})
 .error(function (err) {});
 ```
 
 ## License
 
 Copyright (C) Nicholas Young, Original Machine LLC.
-All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
