@@ -2,3 +2,4 @@ examples
 test
 .jshintrc
 Gulpfile.js
+.travis.yml
