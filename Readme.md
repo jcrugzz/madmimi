@@ -1,5 +1,7 @@
 # Mad Mimi
 
+![travis-ci](https://travis-ci.org/nicholaswyoung/madmimi.svg)
+
 A clean, modern interface for the [Mad Mimi](http://madmimi.com) API.
 
 Under the hood, it uses [Bluebird](https://github.com/petkaantonov/bluebird) to provide a Promise-based API. Alternatively, you can also use callbacks (in the traditional Node style), if preferred.
