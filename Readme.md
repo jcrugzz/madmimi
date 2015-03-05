@@ -1,44 +1,35 @@
-# Mad Mimi
+# Mad Mimi Constructor
 
-![travis-ci](https://travis-ci.org/nicholaswyoung/madmimi.svg)
+A _fork of the_ clean, modern interface for the [Mad Mimi](http://madmimi.com) API.
 
-A clean, modern interface for the [Mad Mimi](http://madmimi.com) API.
+Unlike the original API, there is no Promise support here, to keep this module lightweight and as tribute to da jcrugzz.
 
-Under the hood, it uses [Bluebird](https://github.com/petkaantonov/bluebird) to provide a Promise-based API. Alternatively, you can also use callbacks (in the traditional Node style), if preferred.
-
-For detailed usage instructions, see the [Examples](https://github.com/nicholaswyoung/madmimi/tree/master/examples).
+For detailed usage instructions, see the [Examples](https://github.com/donasaur/madmimi/tree/master/examples/examples.js).
 
 ## Installation
 
-```npm install madmimi```
+```npm install madmimi-constructor```
 
 ## Usage
 
 ```javascript
-var madmimi = require('madmimi');
+var madmimiConstructor = require('madmimi-constructor');
+
+// Create an instance for each set of requests that involve the same protocol (http/https), email, and secret API key.
+var madmimiInstance = new madmimiConstructor();
 
 // Only call this once, maybe in an initializer.
-madmimi.configure({
+madmimiInstance.configure({
+  secure: false, // false means endpoint involves http; default: true
   email: 'nicholas@example.com',
   key: 'xxxxx'
 });
 
-madmimi.get('/promotions')
-.then(function (response) {
-
-})
-.error(function (err) {
-
-});
-
-madmimi.get('/promotions/:id', {
-  params: {
-    id: '123456'
-  }
-})
-.then(function (response) {})
-.error(function (err) {});
 ```
+
+The problem with the original [Mad Mimi interface](https://github.com/nicholaswyoung/madmimi) is that all API calls work with the same configurations object. If you wanted to call the API twice without waiting for one API call to complete, and each call involved different configurations (e.g., one call involved a https MadMimi endpoint(```https://api.madmimi.com```) while another call involved a http MM endpoint(```http://api.madmimi.com```), this would present a problem.
+
+This is resolved in this module because the constructor of interest from the original module's library is exposed, so that developers can create an instance with a separate configuration object for each set of requests they want to send involving the same configuration details (protocol (http/https), email, and secret API key).
 
 ## License
 

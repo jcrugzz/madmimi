@@ -1,6 +1,6 @@
 {
-  "name": "madmimi",
-  "version": "1.0.1",
+  "name": "madmimi-constructor",
+  "version": "1.0.0",
   "description": "A simple, feature-complete client for the Mad Mimi REST API.",
   "main": "lib/index.js",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nicholaswyoung/madmimi.git"
+    "url": "git@github.com:donasaur/madmimi.git"
   },
   "keywords": [
     "mad",
@@ -22,14 +22,13 @@
     "email",
     "madmimi"
   ],
-  "author": "Nicholas Young <nicholas@nicholaswyoung.com>",
+  "author": "Don Mai <donhmai@gmail.com>",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/nicholaswyoung/madmimi/issues"
+    "url": "https://github.com/donasaur/madmimi/issues"
   },
-  "homepage": "https://github.com/nicholaswyoung/madmimi",
+  "homepage": "https://github.com/donasaur/madmimi",
   "dependencies": {
-    "bluebird": "^2.3.4",
     "errbot": "0.0.3",
     "methods": "^1.1.0",
     "request": "^2.44.0"

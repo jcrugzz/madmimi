@@ -1,19 +1,20 @@
-var madmimi = require('../')
+var madmimiConstructor = require('../')
+,   madmimiInstance = new madmimiConstructor()
 ,   expect  = require('chai').expect;
 
 describe('MadMimi Configuration', function () {
   it('should use sensible defaults', function () {
-    expect(madmimi.secure).to.equal(true);
-    expect(madmimi.host).to.equal('api.madmimi.com');
+    expect(madmimiInstance.secure).to.equal(true);
+    expect(madmimiInstance.host).to.equal('api.madmimi.com');
   });
 
   it('should store configuration when #configure is called', function () {
-    madmimi.configure({
+    madmimiInstance.configure({
       email: 'nicholas@example.com',
       key: 'xxxx'
     });
 
-    expect(madmimi.email).to.equal('nicholas@example.com');
-    expect(madmimi.key).to.equal('xxxx');
+    expect(madmimiInstance.email).to.equal('nicholas@example.com');
+    expect(madmimiInstance.key).to.equal('xxxx');
   });
 });
