@@ -27,7 +27,7 @@ madmimiInstance.configure({
 
 ```
 
-The problem with the original [Mad Mimi interface](https://github.com/nicholaswyoung/madmimi) is that all API calls work with the same configurations object. If you wanted to call the API twice without waiting for one API call to complete, and each call involved different configurations (e.g., one call involved a https MadMimi endpoint(```https://api.madmimi.com```) while another call involved a http MM endpoint(```http://api.madmimi.com```), this would present a problem.
+The problem with the original [Mad Mimi interface](https://github.com/nicholaswyoung/madmimi) is that all API calls work with the same configurations object. If you wanted to call the API twice without waiting for one API call to complete, and each call involved different configurations (e.g., one call involved a https MadMimi endpoint ```e.g., https://api.madmimi.com``` while another call involved a http MM endpoint ```e.g., http://api.madmimi.com```, this would present a problem.
 
 This is resolved in this module because the constructor of interest from the original module's library is exposed, so that developers can create an instance with a separate configuration object for each set of requests they want to send involving the same configuration details (protocol (http/https), email, and secret API key).
 
