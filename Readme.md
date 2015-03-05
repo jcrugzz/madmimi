@@ -1,6 +1,6 @@
 # Mad Mimi Constructor
 
-A **fork of** the clean, modern interface for the [Mad Mimi](http://madmimi.com) API.
+A **fork of the** clean, modern interface for the [Mad Mimi](http://madmimi.com) API.
 
 Unlike the original API, there is no Promise support here, to keep this module lightweight and as tribute to da jcrugzz.
 
